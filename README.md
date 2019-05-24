@@ -1,6 +1,5 @@
 # Technical-Task
 
-## Usage Guide:
 ## The program have 3 ‘actions’:
 ### 1. Record
 * Save one or more values into a specified file
