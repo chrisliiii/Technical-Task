@@ -16,3 +16,4 @@
 ## Note:
 * value : Only accept numeric values
 * filename : Only accept text file (.txt)
+* summary action is only available after record action
