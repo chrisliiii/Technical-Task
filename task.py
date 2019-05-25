@@ -62,12 +62,13 @@ def create_texttable(read_list):
 # help action: print informative message
 def help():
     print("Usage Guide: ")
-    print("1. python task.py record filepath value [value 2..value n]")
-    print("2. python task.py summarise/summary filepath")
-    print("3. python task.py help" + "\n")
+    print("1. record action : python task.py record filepath value [value 2..value n]")
+    print("2. summary action : python task.py summarise/summary filepath")
+    print("3. help action : python task.py help" + "\n")
     print("Note: ")
     print("* value : Only accept numeric values")
     print("* filename : Only accept text file (.txt)")
+    print("* summary action is only available after record action")
 
 # main function
 if __name__ == "__main__":
