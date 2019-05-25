@@ -9,7 +9,7 @@ def check_value(argu, value_list):
         try:
             float(sys.argv[i])
         except:
-            help()
+            help_message()
             value_list = []
             break
     return value_list
@@ -28,9 +28,9 @@ def record(argu):
         if argu[2].endswith('.txt'):
             value_list = check_value(argu, value_list)
         else:
-            help()
+            help_message()
     else:
-        help()
+        help_message()
 
     if value_list != []:
         write_file(value_list, argu)
@@ -48,9 +48,9 @@ def summary(argu):
             read_list = list(map(float, read_list))
             create_texttable(read_list)
         else:
-            help()
+            help_message()
     else:
-        help()
+        help_message()
 
 # print a text table
 def create_texttable(read_list):
@@ -63,7 +63,7 @@ def create_texttable(read_list):
     print(x)
 
 # help action: print informative message
-def help():
+def help_message():
     print("Usage Guide: ")
     print("1. record action : python task.py record filepath value [value 2..value n]")
     print("2. summary action : python task.py summarise/summary filepath")
@@ -86,6 +86,6 @@ if __name__ == "__main__":
 
         # help
         elif sys.argv[1].lower() == "help":
-            help()
+            help_message()
     except:
-        help()
+        help_message()
