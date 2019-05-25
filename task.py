@@ -24,6 +24,7 @@ def write_file(value_list, argu):
 def record(argu):
     value_list = []
     if len(argu) > 3:
+        # check if the file is a text file
         if argu[2].endswith('.txt'):
             value_list = check_value(argu, value_list)
         else:
@@ -34,14 +35,16 @@ def record(argu):
     if value_list != []:
         write_file(value_list, argu)
 
-# summary action: summarise the
+# summary action: summarise the values
 def summary(argu):
     if len(argu) == 3:
         txt_file = argu[2]
         if txt_file.endswith('.txt'):
             with open(txt_file, "r") as input_file:
                 read_list = input_file.read().split('\n')
+            # filter none value
             read_list = list(filter(None, read_list))
+            # convert string to float
             read_list = list(map(float, read_list))
             create_texttable(read_list)
         else:
