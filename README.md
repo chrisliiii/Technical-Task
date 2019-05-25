@@ -1,6 +1,6 @@
 # Technical-Task
 
-## The program have 3 ‘actions’:
+## The program has 3 ‘actions’:
 ### 1. Record
 * Save one or more values into a specified file
 * command : python task.py record filepath value [value 2..value n]
