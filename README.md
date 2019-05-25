@@ -11,7 +11,7 @@
 
 ### 3. Help
 * This is a help message
-* command: python task.py help" + "\n
+* command: python task.py help
 
 ## Note:
 * value : Only accept numeric values
