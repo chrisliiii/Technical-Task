@@ -1,6 +1,10 @@
 # Technical-Task
 The program allows numeric values to be recorded into a text file and allow a summary of the values to be printed.
 
+## Required Packages:
+* pip install statistics
+* pip install PrettyTable
+
 ## The program has 3 ‘actions’:
 ### 1. Record
 * Save one or more values into a specified file
